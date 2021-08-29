@@ -1,0 +1,8 @@
+<ul class="list-group">
+  <li [class]="getCurrentBrands(brand)" *ngFor='let brand of brands' (click)="setCurrentBrands(brand)">
+
+    {{brand.name}}
+  </li>
+
+  <h5 *ngIf="currentBrands"> {{currentBrands.name}} seçtiniz.</h5>
+</ul>
